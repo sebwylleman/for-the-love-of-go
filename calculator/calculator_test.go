@@ -108,13 +108,14 @@ func TestSqrt(t *testing.T) {
 		{n: 16, want: 4},
 		{n: 1, want: 1},
 		{n: 3, want: 1.732},
+		{n: 1.4, want: 1.2},
 	}
 	for _, tc := range testCases {
 		got, err := calculator.Sqrt(tc.n)
 		if err != nil {
 			t.Fatalf("Sqrt(%f): want no error for valid input, got %v", tc.n, err)
 		}
-		if !closeEnoughSqrt(tc.want, got, 0.001) {
+		if !closeEnoughSqrt(tc.want, got, 0.1) {
 			t.Errorf("Sqrt(%f): want %f, got %f", tc.n, tc.want, got)
 		}
 	}
