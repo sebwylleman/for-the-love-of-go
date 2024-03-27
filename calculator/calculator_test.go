@@ -63,8 +63,8 @@ func TestMultiply(t *testing.T) {
 		}
 	}
 }
-func closeEnoughDivision(a, b, tolerance float64) bool {
-	return math.Abs(a-b) <= tolerance
+func closeEnoughDivision(want, got, tolerance float64) bool {
+	return math.Abs(want-got) <= tolerance
 }
 func TestDivide(t *testing.T) {
 	t.Parallel()
@@ -95,4 +95,7 @@ func TestDivideInvalid(t *testing.T) {
 	if err == nil {
 		t.Error("want error for invalid input, got nil")
 	}
+}
+func closeEnoughSqrt(want, got, tolerance float64) bool {
+	return math.Abs(want-got) <= tolerance
 }
