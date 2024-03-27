@@ -81,7 +81,7 @@ func TestDivide(t *testing.T) {
 	for _, tc := range testCases {
 		got, err := calculator.Divide(tc.a, tc.b)
 		if err != nil {
-			t.Fatalf("Divide(%f, %f): want no error for valid input, got %v", tc.a, tc.b, err)
+			t.Fatalf("Divide(%f, %f): want no error for valid input, got %v", tc.a, tc.b, got)
 		}
 		if !closeEnoughDivision(tc.want, got, 0.001) {
 			t.Errorf("Divide(%f, %f): want %f, got %f", tc.a, tc.b,
@@ -98,4 +98,24 @@ func TestDivideInvalid(t *testing.T) {
 }
 func closeEnoughSqrt(want, got, tolerance float64) bool {
 	return math.Abs(want-got) <= tolerance
+}
+func TestSqrt(t *testing.T) {
+	t.Parallel()
+	type testCase struct {
+		n, want float64
+	}
+	testCases := []testCase{
+		{n: 16, want: 4},
+		{n: 1, want: 1},
+		{n: 3, want: 1.732},
+	}
+	for _, tc := range testCases {
+		got, err := calculator.Sqrt(tc.n)
+		if err != nil {
+			t.Fatalf("Sqrt(%f): want no error for valid input, got %v", tc.n, got)
+		}
+		if !closeEnoughSqrt(tc.want, got, 0.001) {
+			t.Errorf("Sqrt(%f): want %f, got %f", tc.n, tc.want, got)
+		}
+	}
 }
