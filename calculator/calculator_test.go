@@ -81,7 +81,7 @@ func TestDivide(t *testing.T) {
 	for _, tc := range testCases {
 		got, err := calculator.Divide(tc.a, tc.b)
 		if err != nil {
-			t.Fatalf("Divide(%f, %f): want no error for valid input, got %v", tc.a, tc.b, got)
+			t.Fatalf("Divide(%f, %f): want no error for valid input, got %v", tc.a, tc.b, err)
 		}
 		if !closeEnoughDivision(tc.want, got, 0.001) {
 			t.Errorf("Divide(%f, %f): want %f, got %f", tc.a, tc.b,
@@ -112,7 +112,7 @@ func TestSqrt(t *testing.T) {
 	for _, tc := range testCases {
 		got, err := calculator.Sqrt(tc.n)
 		if err != nil {
-			t.Fatalf("Sqrt(%f): want no error for valid input, got %v", tc.n, got)
+			t.Fatalf("Sqrt(%f): want no error for valid input, got %v", tc.n, err)
 		}
 		if !closeEnoughSqrt(tc.want, got, 0.001) {
 			t.Errorf("Sqrt(%f): want %f, got %f", tc.n, tc.want, got)
