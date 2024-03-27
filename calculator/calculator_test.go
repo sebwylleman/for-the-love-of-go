@@ -63,7 +63,7 @@ func TestMultiply(t *testing.T) {
 		}
 	}
 }
-func closeEnough(a, b, tolerance float64) bool {
+func closeEnoughDivision(a, b, tolerance float64) bool {
 	return math.Abs(a-b) <= tolerance
 }
 func TestDivide(t *testing.T) {
@@ -83,7 +83,7 @@ func TestDivide(t *testing.T) {
 		if err != nil {
 			t.Fatalf("Divide(%f, %f): want no error for valid input, got %v", tc.a, tc.b, err)
 		}
-		if !closeEnough(tc.want, got, 0.001) {
+		if !closeEnoughDivision(tc.want, got, 0.001) {
 			t.Errorf("Divide(%f, %f): want %f, got %f", tc.a, tc.b,
 				tc.want, got)
 		}
