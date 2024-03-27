@@ -119,3 +119,10 @@ func TestSqrt(t *testing.T) {
 		}
 	}
 }
+func TestSqrtInvalid(t *testing.T) {
+	t.Parallel()
+	_, err := calculator.Sqrt(-1)
+	if err == nil {
+		t.Error("want error for invalid input, got nil")
+	}
+}

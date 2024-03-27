@@ -39,7 +39,7 @@ func Divide(a, b float64) (float64, error) {
 // or an error for negative inputs.
 func Sqrt(a float64) (float64, error) {
 	if a < 0 {
-		return 0, errors.New("invalid input, only positive numbers allowed")
+		return math.Sqrt(a), errors.New("invalid input, negative numbers not allowed")
 	}
 	return math.Sqrt(a), nil
 }
