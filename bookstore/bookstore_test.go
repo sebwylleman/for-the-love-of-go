@@ -8,9 +8,9 @@ import (
 func TestBook(t *testing.T) {
 	t.Parallel()
 	_ = bookstore.Book{
-		Title:  "Spark Joy",
-		Author: "Marie Kondo",
-		Copies: 2,
+		Title:  "Dune",
+		Author: "F. Herbert",
+		Copies: 10,
 	}
 }
 
@@ -29,5 +29,18 @@ func TestBuy(t *testing.T) {
 	got := result.Copies
 	if got != want {
 		t.Errorf("got %d copies, want %d", got, want)
+	}
+}
+
+func TestBuyErrorsIfNoCopiesLeft(t *testing.T) {
+	t.Parallel()
+	b := bookstore.Book{
+		Title:  "Dune",
+		Author: "F. Herbert",
+		Copies: 0,
+	}
+	_, err := bookstore.Buy(b)
+	if err == nil {
+		t.Error("want error buying from zero copies. got nil")
 	}
 }
