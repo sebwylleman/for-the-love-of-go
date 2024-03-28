@@ -22,7 +22,10 @@ func TestBuy(t *testing.T) {
 		Copies: 10,
 	}
 	want := 9
-	result := bookstore.Buy(b)
+	result, err := bookstore.Buy(b)
+	if err != nil {
+		t.Fatal(err)
+	}
 	got := result.Copies
 	if got != want {
 		t.Errorf("got %d copies, want %d", got, want)
