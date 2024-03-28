@@ -6,10 +6,7 @@ type Book struct {
 	Copies int
 }
 
-func Buy(b1 Book) Book {
-	return Book{
-		Title:  b1.Title,
-		Author: b1.Author,
-		Copies: b1.Copies - 1,
-	}
+func Buy(b Book) Book {
+	b.Copies--
+	return b
 }
