@@ -1,6 +1,6 @@
 # For the Love of Go: Exercise Solutions
 
-**This repository contains solutions to exercises from John Arundel's [book](https://bitfieldconsulting.com/books/love), "For the Love of Go." It serves as a record of my learning journey and provides potential solutions for others working through the book.**
+This repository contains solutions to exercises from John Arundel's [book](https://bitfieldconsulting.com/books/love), "For the Love of Go." It serves as a record of my learning journey and provides potential solutions for others working through the book.
 
 **Getting Started**
 
