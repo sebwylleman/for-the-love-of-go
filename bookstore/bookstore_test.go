@@ -70,11 +70,9 @@ func TestGetBook(t *testing.T) {
 			Title: "For the Love of Go",
 		},
 	}
-	want := []bookstore.Book{
-		{
-			ID:    1,
-			Title: "For the Love of Go",
-		},
+	want := bookstore.Book{
+		ID:    1,
+		Title: "For the Love of Go",
 	}
 	got := bookstore.GetBook(catalog, 1)
 	if !cmp.Equal(want, got) {

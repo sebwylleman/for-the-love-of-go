@@ -21,5 +21,10 @@ func GetAllBooks(catalog []Book) []Book {
 	return catalog
 }
 func GetBook(catalog []Book, id int) Book {
+	for _, b := range catalog {
+		if b.ID == id {
+			return b
+		}
+	}
 	return Book{}
 }
