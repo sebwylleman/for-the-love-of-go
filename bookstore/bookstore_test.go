@@ -108,7 +108,7 @@ func TestNetPriceCents(t *testing.T) {
 		DiscountPercent: 25,
 	}
 	want := 3000
-	got := bookstore.NetPriceCents(b)
+	got := b.NetPriceCents()
 	if want != got {
 		t.Errorf("want %d, got %d", want, got)
 	}

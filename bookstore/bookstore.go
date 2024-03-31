@@ -39,7 +39,7 @@ func GetBook(catalog map[int]Book, id int) (Book, error) {
 	return b, nil
 }
 
-func NetPriceCents(b Book) int {
+func (b Book) NetPriceCents() int {
 	discount := b.DiscountPercent * b.PriceCents / 100
 	return b.PriceCents - discount
 }
