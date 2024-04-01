@@ -25,3 +25,12 @@ func TestMyStringLen(t *testing.T) {
 		t.Errorf("want length of %s = %d, got %d", input, want, got)
 	}
 }
+func TestMyBuilderHello(t *testing.T) {
+	t.Parallel()
+	var mb mytypes.MyBuilder
+	want := "Hello, Gophers!"
+	got := mb.Hello()
+	if want != got {
+		t.Errorf("want %q, got %q", want, got)
+	}
+}
