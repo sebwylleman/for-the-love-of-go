@@ -4,7 +4,9 @@ import "strings"
 
 type MyInt int
 type MyString string
-type MyBuilder strings.Builder
+type MyBuilder struct {
+	Contents strings.Builder
+}
 
 // Twice multiplies its receiver by 2 and returns
 // the result.
