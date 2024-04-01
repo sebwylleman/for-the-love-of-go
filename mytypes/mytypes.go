@@ -7,6 +7,9 @@ type MyString string
 type MyBuilder struct {
 	Contents strings.Builder
 }
+type StringUppercaser struct {
+	Contents strings.Builder
+}
 
 // Twice multiplies its receiver by 2 and returns
 // the result.
@@ -21,4 +24,8 @@ func (s MyString) Len() int {
 
 func (mb MyBuilder) Hello() string {
 	return "Hello, Gophers!"
+}
+
+func (su StringUppercaser) ToUpper() string {
+	return strings.ToUpper(su.Contents.String())
 }

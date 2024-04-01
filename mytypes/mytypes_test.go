@@ -42,3 +42,14 @@ func TestMyBuilder(t *testing.T) {
 		t.Errorf("%q: want len %d, got %d", mb.Contents.String(), wantLen, gotLen)
 	}
 }
+
+func TestStringUppercaser(t *testing.T) {
+	t.Parallel()
+	var su mytypes.StringUppercaser
+	su.Contents.WriteString("hello")
+	want := "HELLO"
+	got := su.ToUpper()
+	if want != got {
+		t.Errorf("want %s, got %s", want, got)
+	}
+}
