@@ -4,6 +4,8 @@ import (
 	"errors"
 )
 
+// This code defines a creditcard package in Go. It creates a card struct to store a credit card's account number
+
 type card struct {
 	account_number string
 }

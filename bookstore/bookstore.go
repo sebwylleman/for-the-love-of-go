@@ -5,6 +5,16 @@ import (
 	"fmt"
 )
 
+// This code project implements a simple bookstore in Go. It defines a Book struct to store information about books and a Catalog which is a map to store them by ID. It includes functions to:
+
+// - Purchase a book (reducing stock)
+// - Get a list of all books
+// - Get a specific book by ID
+// - Calculate the net price of a book after discount
+// - Update a book's price (with validation)
+// - Update a book's category (with validation)
+// - Get a book's category
+
 type Book struct {
 	Title           string
 	Author          string
