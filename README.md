@@ -2,13 +2,7 @@
 
 This repository contains solutions to exercises from John Arundel's [book](https://bitfieldconsulting.com/books/love), "For the Love of Go." It serves as a record of my learning journey and provides potential solutions for others working through the book.
 
-Absolutely! Here's the extract formatted correctly in markdown for your README.md:
-
-## What you'll learn
-
-Absolutely! Here's the extract formatted correctly in markdown for your README.md, keeping the original content intact:
-
-## What you'll learn
+**What you'll learn**
 
 By reading through this book and completing the exercises, you'll learn:
 
