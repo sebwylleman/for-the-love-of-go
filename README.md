@@ -1,22 +1,24 @@
-# For the Love of Go: Exercise Solutions
+## For the Love of Go:
 
 This repository contains solutions to exercises from John Arundel's [book](https://bitfieldconsulting.com/books/love), "For the Love of Go." It serves as a record of my learning journey and provides potential solutions for others working through the book.
 
 **Getting Started**
 
-1. **Clone this repository:**
+1. **Prerequisites:** Ensure you have Go installed and configured on your system. You can find installation instructions on the official Go website: [https://golang.org/doc/install](https://golang.org/doc/install)
+
+2. **Clone this repository:**
 
    ```bash
    gh repo clone sebwylleman/for-the-love-of-go
    ```
 
-2. **Navigate to the directory:**
+3. **Navigate to the directory:**
 
    ```bash
    cd for-the-love-of-go
    ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
    Some exercises might require additional packages. In their respective directories, you might find a `go.mod` file indicating dependencies. You can install them with:
 
@@ -31,6 +33,10 @@ Each exercise chapter or section might have its own subdirectory within this rep
 **Contributing (Optional)**
 
 Feel free to add your own solutions, notes, or improvements as you progress through the book. You can fork this repository and submit pull requests with your contributions.
+
+**License**
+
+This repository is licensed under the MIT License: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
 
 **Disclaimer**
 
