@@ -2,6 +2,22 @@
 
 This repository contains solutions to exercises from John Arundel's [book](https://bitfieldconsulting.com/books/love), "For the Love of Go." It serves as a record of my learning journey and provides potential solutions for others working through the book.
 
+Absolutely! Here's the extract formatted correctly in markdown for your README.md:
+
+## What you'll learn
+
+Absolutely! Here's the extract formatted correctly in markdown for your README.md, keeping the original content intact:
+
+## What you'll learn
+
+By reading through this book and completing the exercises, you'll learn:
+
+- How to write tests in Go and how to develop projects guided by tests
+- How to manage data in Go using built-in types, user-defined struct types, and collections such as maps and slices
+- How to write and test functions, including functions that return multiple results and error values
+- How to use objects to model problems in Go, and how to add behaviour to objects using methods
+- How to use pointers to write methods that modify objects, and how to use types and validation to make your Go packages easy to use
+
 **Getting Started**
 
 1. **Prerequisites:** Ensure you have Go installed and configured on your system. You can find installation instructions on the official Go website: [https://golang.org/doc/install](https://golang.org/doc/install)
