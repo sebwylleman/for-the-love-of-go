@@ -18,23 +18,23 @@ By reading through this book and completing the exercises, you'll learn:
 
 2. **Clone this repository:**
 
-   ```bash
-   gh repo clone sebwylleman/for-the-love-of-go
-   ```
+```bash
+gh repo clone sebwylleman/for-the-love-of-go
+```
 
 3. **Navigate to the directory:**
 
-   ```bash
-   cd for-the-love-of-go
-   ```
+```bash
+cd for-the-love-of-go
+```
 
 4. **Install dependencies:**
 
-   Some exercises might require additional packages. In their respective directories, you might find a `go.mod` file indicating dependencies. You can install them with:
+Some exercises might require additional packages. In their respective directories, you might find a `go.mod` file indicating dependencies. You can install them with:
 
-   ```bash
-   go mod download
-   ```
+```bash
+go mod download
+```
 
 **Exercise Structure**
 
